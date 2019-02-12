@@ -4,7 +4,7 @@ import * as pify from 'pify';
 import {DevToolsProfileNode} from './index';
 
 const writeFilep =
-    (pify(fs.writeFile) as (filename: string, data: {}) => Promise<void>);
+    (pify.default(fs.writeFile) as (filename: string, data: {}) => Promise<void>);
 
 
 export async function writeAsync(

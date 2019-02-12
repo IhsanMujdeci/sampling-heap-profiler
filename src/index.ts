@@ -79,7 +79,7 @@ export interface DevToolsProfileNode {
   children: DevToolsProfileNode[];
 }
 
-function translateToDevtools(node: AllocationProfileNode): DevToolsProfileNode {
+export function translateToDevtools(node: AllocationProfileNode): DevToolsProfileNode {
   return {
     functionName: node.name,
     scriptId: node.scriptId,
